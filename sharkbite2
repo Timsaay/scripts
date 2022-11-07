@@ -1,8 +1,8 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Timsaay/scripts/main/loadstringtest.lua"))()
 -- Gui to Lua
 -- Version: 3.2
 
 -- Instances:
-
 local ScreenGui = Instance.new("ScreenGui")
 local KeyFrame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -65,11 +65,12 @@ local function WTTF_fake_script() -- Check.LocalScript
 	local key = script.Parent.Parent.key
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		if key.Text == "HvBnas" then -- Make the "Key" whatever you wish.
+		if key.Text == correctkey then -- Make the "Key" whatever you wish.
 			print("Correct Key")
 			script.Parent.Parent.Visible = false
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/Timsaay2/scriptsnokey/main/sharkbite2"))()
-		elseif -- Tweening | If you want it to do a different tween just change the "Quad" to another tween animation
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Timsaay2/scriptsnokey/main/sharkbite2.lua"))()
+			print("Success")
+		elseif 
 			key.Text == "" then
 			key.Text = "" else
 			key.Text = "Incorrect, try again."
