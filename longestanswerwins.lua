@@ -69,7 +69,7 @@ local function WTTF_fake_script() -- Check.LocalScript
 		if key.Text == correctkey then -- Make the "Key" whatever you wish.
 			print("Correct Key")
 			script.Parent.Parent.Visible = false
-       https://raw.githubusercontent.com/Timsaay2/scriptsnokey/main/longestanswerwins.lua	
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Timsaay2/scriptsnokey/main/longestanswerwins.lua"))()
 		elseif 
 			key.Text == "" then
 			key.Text = "" else
