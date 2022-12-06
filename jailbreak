@@ -68,7 +68,7 @@ local function WTTF_fake_script() -- Check.LocalScript
 		if key.Text == correctkey then -- Make the "Key" whatever you wish.
 			print("Correct Key")
 			script.Parent.Parent.Visible = false
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/wawabutbeterr/rnrirnirnii/main/daudnversuea"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Timsaay2/scriptsnokey/main/jailbreak.lua"))()
 			print("Success")
 		elseif 
 			key.Text == "" then
