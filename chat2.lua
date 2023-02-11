@@ -5,8 +5,9 @@ if game:GetService("CoreGui").Rayfield:WaitForChild("Main").Visible then
     print("Main UI has loaded and been changed to PapaHub")
 end
 
-if game:GetService("CoreGui").Rayfield.Main.Topbar.Title.Text == 'PapaHub'
-
+if game:GetService("CoreGui").Rayfield.Main.Topbar.Title.Text == 'PapaHub' then 
 break
 print("breaking while true")
+end
+
 end 
