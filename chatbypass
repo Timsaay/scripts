@@ -1,3 +1,4 @@
+wait(5) 
 if game:GetService("CoreGui").Rayfield:WaitForChild("Main").Visible then
     game:GetService("CoreGui").Rayfield.Main.Topbar.Title.Text = 'PapaHub'
     
