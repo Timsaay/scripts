@@ -1,0 +1,2 @@
+local script = 'https://raw.githubusercontent.com/lf4d7/daphie/main/psx%20vision'
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Timsaay/scripts/main/KEYSYSTEM.lua'),true))()
