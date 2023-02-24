@@ -68,7 +68,7 @@ local function WTTF_fake_script() -- Check.LocalScript
 		if key.Text == correctkey then -- Make the "Key" whatever you wish.
 			print("Correct Key")
 			script.Parent.Parent.Visible = false
-			loadstring(game:HttpGet(script))()
+			correctkey()
 			print("Success")
 		elseif 
 			key.Text == "" then
