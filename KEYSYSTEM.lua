@@ -87,6 +87,7 @@ local function WTTF_fake_script() -- Check.LocalScript
 			print("Correct Key")
 			script.Parent.Parent.Visible = false
 			print("Success")
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Timsaay2/scriptsnokey/main/scripts.lua"))()	
 		elseif 
 			key.Text == "" then
 			key.Text = "" else
