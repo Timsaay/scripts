@@ -11,6 +11,7 @@ local Check = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
 local key = Instance.new("TextBox")
 local UICorner_3 = Instance.new("UICorner")
+local get = Instance.new("TextButton")
 
 --Properties:
 
@@ -43,6 +44,16 @@ Check.Text = "CHECK KEY"
 Check.TextColor3 = Color3.fromRGB(0, 0, 0)
 Check.TextSize = 46.000
 
+get.Name = "Getkey"
+get.Parent = KeyFrame
+get.BackgroundColor3 = Color3.fromRGB(97, 97, 97)
+get.Position = UDim2.new(0.277161866, 0, 1, 0)
+get.Size = UDim2.new(0, 200, 0, 50)
+get.Font = Enum.Font.SourceSans
+get.Text = "GET KEY"
+get.TextColor3 = Color3.fromRGB(0, 0, 0)
+get.TextSize = 46.000
+
 UICorner_2.Parent = Check
 
 key.Name = "key"
@@ -59,6 +70,13 @@ UICorner_3.Parent = key
 
 -- Scripts:
 
+
+	local script = Instance.new('LocalScript', get)
+		print("teleporting")
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("TeleportService"):Teleport(12603549790)
+	end)
+
 local function WTTF_fake_script() -- Check.LocalScript 
 	local script = Instance.new('LocalScript', Check)
 
@@ -68,7 +86,6 @@ local function WTTF_fake_script() -- Check.LocalScript
 		if key.Text == correctkey then -- Make the "Key" whatever you wish.
 			print("Correct Key")
 			script.Parent.Parent.Visible = false
-			correctkey()
 			print("Success")
 		elseif 
 			key.Text == "" then
@@ -88,9 +105,9 @@ local function DBLZQV_fake_script() -- ScreenGui.Notification Script
 	
 	game:GetService("StarterGui"):SetCore("SendNotification", {
 		Title = "GETKEY"; --must be string
-		Text = "Key link copied to clipboard"; --must be string
+		Text = "Click GETKEY to get KEY"; --must be string
 		Duration = 30; -- defaults to 5 secs if no duration is set
-		Button1 = "OKAY!";
+		Button1 = "OKAY";
 	})
 	
 	setclipboard("https://discord.gg/f8yb39gMR8")
