@@ -83,7 +83,7 @@ local function WTTF_fake_script() -- Check.LocalScript
 	local key = script.Parent.Parent.key
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		if key.Text == correctkey then -- Make the "Key" whatever you wish.
+		if key.Text == key then -- Make the "Key" whatever you wish.
 			print("Correct Key")
 			script.Parent.Parent.Visible = false
 			print("Success")
@@ -111,6 +111,5 @@ local function DBLZQV_fake_script() -- ScreenGui.Notification Script
 		Button1 = "OKAY";
 	})
 	
-	setclipboard("https://discord.gg/f8yb39gMR8")
 end
 coroutine.wrap(DBLZQV_fake_script)()
