@@ -83,7 +83,7 @@ local function WTTF_fake_script() -- Check.LocalScript
 	local key = script.Parent.Parent.key
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		if key.Text == key then -- Make the "Key" whatever you wish.
+		if key.Text == correctkey then -- Make the "Key" whatever you wish.
 			print("Correct Key")
 			script.Parent.Parent.Visible = false
 			print("Success")
