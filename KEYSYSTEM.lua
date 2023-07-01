@@ -72,7 +72,6 @@ UICorner_3.Parent = key
 
 
 	local script = Instance.new('LocalScript', get)
-		print("GET Key...")
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard("https://bated-slash.000webhostapp.com/getkey.php")
 	end)
